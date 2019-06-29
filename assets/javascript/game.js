@@ -9,6 +9,8 @@ var lettersGuessed = [];
 var computerGuess = [];
 
 
+	
+
 //Initial computer letter
 window.onload = function() {
 	var compGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
@@ -46,12 +48,12 @@ else {
 	computerGuess.push(compGuess);
 	console.log(computerGuess[0]);
 }
-
-var html = "<p>Guess what letter I'm thinking of!</p>" +
+var html = "<h1> The Psychic Game </h1>" +
+		"<p>Guess what letter I'm thinking of. You will not beat me. </p>" +
           "<p>Wins: " + wins + "</p>" +
           "<p>Losses: " + losses + "</p>" +
           "<p>Guesses left: " + guessesLeft + "</p>" +
           "<p>Your guesses so far: " + lettersGuessed + "</p>";
 
-document.querySelector("#game").innerHTML = html;
-	}
+		  document.querySelector("#game").innerHTML = html;
+}
